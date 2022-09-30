@@ -26,7 +26,7 @@ public class ATM {
         while(true){
             System.out.println("1. Setor Tunai");
             System.out.println("2. Tarik Tunai");
-            System.out.println("3. View Balance");
+            System.out.println("3. Cek Saldo");
             System.out.print("Pilihan : ");
             int pil = sc.nextInt();
             if(pil==1|pil==2|pil==3){
