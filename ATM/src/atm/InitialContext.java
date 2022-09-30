@@ -4,7 +4,6 @@
  */
 package atm;
 
-import atm.services.Initial;
 import atm.services.Setor;
 import atm.services.Tarik;
 
@@ -22,8 +21,6 @@ public class InitialContext {
       else if (Name.equalsIgnoreCase("TARIK")){
          System.out.println("Loading Tarik Tunai...");
          return new Tarik();
-      }else if (Name.equalsIgnoreCase("INIT")){
-         return new Initial();
       }
       return null;		
    }
