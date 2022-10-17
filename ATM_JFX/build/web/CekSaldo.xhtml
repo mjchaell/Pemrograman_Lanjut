@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>ATM Sederhana</title>
+        <h:outputStylesheet library="css" name="style.css"/>
+    </h:head>
+    <h:body>
+        <h4 id="saldo" style="text-align:center; margin-top: 50px;" >ATM Sederhana</h4>
+        <h4 id="saldo">Saldo : Rp. <h:outputText escape="false" value="#{aTM.cekSaldo()}" /></h4><br/>
+        <h:form id="atm-btn1">
+            <h:commandButton styleClass="button" id="setor-button" value="Setor Tunai" action="SetorTunai" /> <br/><br/>
+            <h:commandButton styleClass="button" id="tarik-button" value="Tarik Tunai" action="TarikTunai" /> <br/><br/>
+            <h:commandButton styleClass="button" id="cek-saldo-button" value="Cek Saldo" action="CekSaldo" /> <br/><br/>
+        </h:form>
+    </h:body>
+</html>
+
